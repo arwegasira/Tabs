@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+[data-tab-content] {
+  display: none;
+  padding: 2rem;
+}
+.active[data-tab-content] {
+  display: block;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 5rem;
+  border-bottom: 1px solid #444;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 1rem;
+}
+.tab.active {
+  background-color: #ccc;
+}
+.tab:hover {
+  background-color: #aaa;
+}
